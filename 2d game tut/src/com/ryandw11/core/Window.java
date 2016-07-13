@@ -20,7 +20,7 @@ public class Window {
 	private BufferStrategy bs;
 
 	public Window(GameContainer gc){
-		image = new BufferedImage(gc.getWidth(), gc.getHeight(), BufferedImage.TYPE_INT_BGR);
+		image = new BufferedImage(gc.getWidth(), gc.getHeight(), BufferedImage.TYPE_INT_RGB);
 		
 		canvas = new Canvas();
 		Dimension s = new Dimension((int)(gc.getWidth() * gc.getScale()), (int)(gc.getHeight() * gc.getScale()));
